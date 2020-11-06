@@ -41,6 +41,28 @@ function api_v1_login_create(action) {
 function api_v1_signup_create(action) {
   return mobilenovAPI.post(`/api/v1/signup/`, null, { data: action.data })
 }
+function api_v1_ttttggkjgkh_list(action) {
+  return mobilenovAPI.get(`/api/v1/ttttggkjgkh/`)
+}
+function api_v1_ttttggkjgkh_create(action) {
+  return mobilenovAPI.post(`/api/v1/ttttggkjgkh/`, null, { data: action.data })
+}
+function api_v1_ttttggkjgkh_read(action) {
+  return mobilenovAPI.get(`/api/v1/ttttggkjgkh/${action.id}/`)
+}
+function api_v1_ttttggkjgkh_update(action) {
+  return mobilenovAPI.put(`/api/v1/ttttggkjgkh/${action.id}/`, null, {
+    data: action.data
+  })
+}
+function api_v1_ttttggkjgkh_partial_update(action) {
+  return mobilenovAPI.patch(`/api/v1/ttttggkjgkh/${action.id}/`, null, {
+    data: action.data
+  })
+}
+function api_v1_ttttggkjgkh_delete(action) {
+  return mobilenovAPI.delete(`/api/v1/ttttggkjgkh/${action.id}/`)
+}
 function rest_auth_login_create(action) {
   return mobilenovAPI.post(`/rest-auth/login/`, null, { data: action.data })
 }
@@ -95,6 +117,12 @@ export const apiService = {
   api_v1_homepage_partial_update,
   api_v1_login_create,
   api_v1_signup_create,
+  api_v1_ttttggkjgkh_list,
+  api_v1_ttttggkjgkh_create,
+  api_v1_ttttggkjgkh_read,
+  api_v1_ttttggkjgkh_update,
+  api_v1_ttttggkjgkh_partial_update,
+  api_v1_ttttggkjgkh_delete,
   rest_auth_login_create,
   rest_auth_logout_list,
   rest_auth_logout_create,

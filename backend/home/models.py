@@ -38,3 +38,8 @@ class HomePage(models.Model):
 class Ttttggkjgkh(models.Model):
     "Generated Model"
     jhgjhgjgjhg = models.BigIntegerField()
+
+
+class JHGjh(models.Model):
+    "Generated Model"
+    gjgjgjhg = models.BigIntegerField()

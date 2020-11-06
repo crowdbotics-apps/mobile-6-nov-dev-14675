@@ -23,7 +23,7 @@ export default class Blank extends React.Component {
     }
   }
 
-  state = { CheckBox_4: true }
+  state = { CheckBox_4: true, CheckBox_6: true, TextInput_7: "" }
 
   render = () => (
     <View>
@@ -40,10 +40,22 @@ export default class Blank extends React.Component {
         title="Radio button"
         checkedIcon="dot-circle-o"
         uncheckedIcon="circle-o"
+        containerStyle={styles.CheckBox_4}
         checked={this.state.CheckBox_4}
         onPress={nextChecked => this.setState({ CheckBox_4: nextChecked })}
       />
       <Icon name="star" />
+      <CheckBox
+        title="Checkbox"
+        checked={this.state.CheckBox_6}
+        onPress={nextChecked => this.setState({ CheckBox_6: nextChecked })}
+      />
+      <TextInput
+        placeholder="Number Input Placeholder"
+        keyboardType="numeric"
+        value={this.state.TextInput_7}
+        onChangeText={nextValue => this.setState({ TextInput_7: nextValue })}
+      />
     </View>
   )
 }
@@ -72,5 +84,17 @@ const styles = StyleSheet.create({
   Text_2: { color: "#ad1414" },
   Button_3: { color: "#d92626" },
   CheckBox_4: {},
-  Icon_5: {}
+  Icon_5: {},
+  View_1: {},
+  Text_2: { color: "#ad1414" },
+  Button_3: { color: "#d92626" },
+  CheckBox_4: {
+    width: "100%",
+    alignSelf: "center",
+    lineHeight: 100,
+    letterSpacing: 8
+  },
+  Icon_5: {},
+  CheckBox_6: {},
+  TextInput_7: {}
 })

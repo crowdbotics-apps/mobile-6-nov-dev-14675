@@ -1,6 +1,11 @@
 import axios from "axios"
+const newConnector = axios.create({
+  baseURL:
+    "https://crowdbotics-slack-dev.herokuapp.com/dashboard/app/14675/share/mab3PmJr5FxdzpVxaWukHykZ7fw",
+  headers: { Accept: "application/json", "Content-Type": "application/json" }
+})
 const mobilenovAPI = axios.create({
-  baseURL: "https://mobile-6-nov-dev-14675-prod.herokuapp.com/",
+  baseURL: "https://mobile-6-nov-dev-14675.botics.co/",
   headers: { Accept: "application/json", "Content-Type": "application/json" }
 })
 function api_v1_customtext_list(action) {
@@ -34,6 +39,28 @@ function api_v1_homepage_partial_update(action) {
   return mobilenovAPI.patch(`/api/v1/homepage/${action.id}/`, null, {
     data: action.data
   })
+}
+function api_v1_jhgjh_list(action) {
+  return mobilenovAPI.get(`/api/v1/jhgjh/`)
+}
+function api_v1_jhgjh_create(action) {
+  return mobilenovAPI.post(`/api/v1/jhgjh/`, null, { data: action.data })
+}
+function api_v1_jhgjh_read(action) {
+  return mobilenovAPI.get(`/api/v1/jhgjh/${action.id}/`)
+}
+function api_v1_jhgjh_update(action) {
+  return mobilenovAPI.put(`/api/v1/jhgjh/${action.id}/`, null, {
+    data: action.data
+  })
+}
+function api_v1_jhgjh_partial_update(action) {
+  return mobilenovAPI.patch(`/api/v1/jhgjh/${action.id}/`, null, {
+    data: action.data
+  })
+}
+function api_v1_jhgjh_delete(action) {
+  return mobilenovAPI.delete(`/api/v1/jhgjh/${action.id}/`)
 }
 function api_v1_login_create(action) {
   return mobilenovAPI.post(`/api/v1/login/`)
@@ -115,6 +142,12 @@ export const apiService = {
   api_v1_homepage_read,
   api_v1_homepage_update,
   api_v1_homepage_partial_update,
+  api_v1_jhgjh_list,
+  api_v1_jhgjh_create,
+  api_v1_jhgjh_read,
+  api_v1_jhgjh_update,
+  api_v1_jhgjh_partial_update,
+  api_v1_jhgjh_delete,
   api_v1_login_create,
   api_v1_signup_create,
   api_v1_ttttggkjgkh_list,

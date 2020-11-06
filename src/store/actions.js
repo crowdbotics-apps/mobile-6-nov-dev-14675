@@ -458,3 +458,78 @@ export const api_v1_ttttggkjgkh_deleteFailed = (error, starter) => ({
   error,
   starter
 })
+export const api_v1_jhgjh_list = () => ({ type: types.API_V1_JHGJH_LIST })
+export const api_v1_jhgjh_listSucceeded = (response, starter) => ({
+  type: types.API_V1_JHGJH_LIST_SUCCEEDED,
+  response,
+  starter
+})
+export const api_v1_jhgjh_listFailed = (error, starter) => ({
+  type: types.API_V1_JHGJH_LIST_FAILED,
+  error,
+  starter
+})
+export const api_v1_jhgjh_create = data => ({
+  type: types.API_V1_JHGJH_CREATE,
+  data
+})
+export const api_v1_jhgjh_createSucceeded = (response, starter) => ({
+  type: types.API_V1_JHGJH_CREATE_SUCCEEDED,
+  response,
+  starter
+})
+export const api_v1_jhgjh_createFailed = (error, starter) => ({
+  type: types.API_V1_JHGJH_CREATE_FAILED,
+  error,
+  starter
+})
+export const api_v1_jhgjh_read = () => ({ type: types.API_V1_JHGJH_READ })
+export const api_v1_jhgjh_readSucceeded = (response, starter) => ({
+  type: types.API_V1_JHGJH_READ_SUCCEEDED,
+  response,
+  starter
+})
+export const api_v1_jhgjh_readFailed = (error, starter) => ({
+  type: types.API_V1_JHGJH_READ_FAILED,
+  error,
+  starter
+})
+export const api_v1_jhgjh_update = data => ({
+  type: types.API_V1_JHGJH_UPDATE,
+  data
+})
+export const api_v1_jhgjh_updateSucceeded = (response, starter) => ({
+  type: types.API_V1_JHGJH_UPDATE_SUCCEEDED,
+  response,
+  starter
+})
+export const api_v1_jhgjh_updateFailed = (error, starter) => ({
+  type: types.API_V1_JHGJH_UPDATE_FAILED,
+  error,
+  starter
+})
+export const api_v1_jhgjh_partial_update = data => ({
+  type: types.API_V1_JHGJH_PARTIAL_UPDATE,
+  data
+})
+export const api_v1_jhgjh_partial_updateSucceeded = (response, starter) => ({
+  type: types.API_V1_JHGJH_PARTIAL_UPDATE_SUCCEEDED,
+  response,
+  starter
+})
+export const api_v1_jhgjh_partial_updateFailed = (error, starter) => ({
+  type: types.API_V1_JHGJH_PARTIAL_UPDATE_FAILED,
+  error,
+  starter
+})
+export const api_v1_jhgjh_delete = () => ({ type: types.API_V1_JHGJH_DELETE })
+export const api_v1_jhgjh_deleteSucceeded = (response, starter) => ({
+  type: types.API_V1_JHGJH_DELETE_SUCCEEDED,
+  response,
+  starter
+})
+export const api_v1_jhgjh_deleteFailed = (error, starter) => ({
+  type: types.API_V1_JHGJH_DELETE_FAILED,
+  error,
+  starter
+})

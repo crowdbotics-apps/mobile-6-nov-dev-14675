@@ -23,7 +23,12 @@ export default class Blank extends React.Component {
     }
   }
 
-  state = { CheckBox_4: true, CheckBox_6: true, TextInput_7: "" }
+  state = {
+    CheckBox_4: true,
+    CheckBox_6: true,
+    TextInput_7: "",
+    Switch_8: true
+  }
 
   render = () => (
     <View>
@@ -38,8 +43,6 @@ export default class Blank extends React.Component {
       />
       <CheckBox
         title="Radio button"
-        checkedIcon="dot-circle-o"
-        uncheckedIcon="circle-o"
         containerStyle={styles.CheckBox_4}
         checked={this.state.CheckBox_4}
         onPress={nextChecked => this.setState({ CheckBox_4: nextChecked })}
@@ -52,9 +55,13 @@ export default class Blank extends React.Component {
       />
       <TextInput
         placeholder="Number Input Placeholder"
-        keyboardType="numeric"
         value={this.state.TextInput_7}
         onChangeText={nextValue => this.setState({ TextInput_7: nextValue })}
+      />
+      <Switch
+        trackColor={{ false: "#C0CCDA", true: "#409EFF" }}
+        value={this.state.Switch_8}
+        onValueChange={nextChecked => this.setState({ Switch_8: nextChecked })}
       />
     </View>
   )
@@ -94,7 +101,21 @@ const styles = StyleSheet.create({
     lineHeight: 100,
     letterSpacing: 8
   },
+
   Icon_5: {},
   CheckBox_6: {},
-  TextInput_7: {}
+  TextInput_7: {},
+  View_1: {},
+  Text_2: { color: "#ad1414" },
+  Button_3: { color: "#d92626" },
+  CheckBox_4: {
+    width: "100%",
+    alignSelf: "center",
+    lineHeight: 888,
+    letterSpacing: 8
+  },
+  Icon_5: {},
+  CheckBox_6: {},
+  TextInput_7: {},
+  Switch_8: {}
 })

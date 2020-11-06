@@ -356,64 +356,78 @@ export const rest_auth_user_partial_updateFailed = (error, starter) => ({
   error,
   starter
 })
+
 export const api_v1_ttttggkjgkh_list = () => ({
   type: types.API_V1_TTTTGGKJGKH_LIST
 })
+
 export const api_v1_ttttggkjgkh_listSucceeded = (response, starter) => ({
   type: types.API_V1_TTTTGGKJGKH_LIST_SUCCEEDED,
   response,
   starter
 })
+
 export const api_v1_ttttggkjgkh_listFailed = (error, starter) => ({
   type: types.API_V1_TTTTGGKJGKH_LIST_FAILED,
   error,
   starter
 })
+
 export const api_v1_ttttggkjgkh_create = data => ({
   type: types.API_V1_TTTTGGKJGKH_CREATE,
   data
 })
+
 export const api_v1_ttttggkjgkh_createSucceeded = (response, starter) => ({
   type: types.API_V1_TTTTGGKJGKH_CREATE_SUCCEEDED,
   response,
   starter
 })
+
 export const api_v1_ttttggkjgkh_createFailed = (error, starter) => ({
   type: types.API_V1_TTTTGGKJGKH_CREATE_FAILED,
   error,
   starter
 })
+
 export const api_v1_ttttggkjgkh_read = () => ({
   type: types.API_V1_TTTTGGKJGKH_READ
 })
+
 export const api_v1_ttttggkjgkh_readSucceeded = (response, starter) => ({
   type: types.API_V1_TTTTGGKJGKH_READ_SUCCEEDED,
   response,
   starter
 })
+
 export const api_v1_ttttggkjgkh_readFailed = (error, starter) => ({
   type: types.API_V1_TTTTGGKJGKH_READ_FAILED,
   error,
   starter
 })
+
 export const api_v1_ttttggkjgkh_update = data => ({
   type: types.API_V1_TTTTGGKJGKH_UPDATE,
   data
 })
+
 export const api_v1_ttttggkjgkh_updateSucceeded = (response, starter) => ({
   type: types.API_V1_TTTTGGKJGKH_UPDATE_SUCCEEDED,
   response,
   starter
 })
+
 export const api_v1_ttttggkjgkh_updateFailed = (error, starter) => ({
   type: types.API_V1_TTTTGGKJGKH_UPDATE_FAILED,
   error,
   starter
 })
+
 export const api_v1_ttttggkjgkh_partial_update = data => ({
   type: types.API_V1_TTTTGGKJGKH_PARTIAL_UPDATE,
   data
 })
+
 export const api_v1_ttttggkjgkh_partial_updateSucceeded = (
   response,
   starter
@@ -422,19 +436,23 @@ export const api_v1_ttttggkjgkh_partial_updateSucceeded = (
   response,
   starter
 })
+
 export const api_v1_ttttggkjgkh_partial_updateFailed = (error, starter) => ({
   type: types.API_V1_TTTTGGKJGKH_PARTIAL_UPDATE_FAILED,
   error,
   starter
 })
+
 export const api_v1_ttttggkjgkh_delete = () => ({
   type: types.API_V1_TTTTGGKJGKH_DELETE
 })
+
 export const api_v1_ttttggkjgkh_deleteSucceeded = (response, starter) => ({
   type: types.API_V1_TTTTGGKJGKH_DELETE_SUCCEEDED,
   response,
   starter
 })
+
 export const api_v1_ttttggkjgkh_deleteFailed = (error, starter) => ({
   type: types.API_V1_TTTTGGKJGKH_DELETE_FAILED,
   error,

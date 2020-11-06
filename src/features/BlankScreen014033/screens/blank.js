@@ -27,7 +27,8 @@ export default class Blank extends React.Component {
     CheckBox_4: true,
     CheckBox_6: true,
     TextInput_7: "54646",
-    Switch_8: true
+    Switch_8: true,
+    DateTimePicker_9: new Date("")
   }
 
   render = () => (
@@ -63,8 +64,16 @@ export default class Blank extends React.Component {
         onChangeText={nextValue => this.setState({ TextInput_7: nextValue })}
       />
       <Switch
+        trackColor={{ false: "#C0CCDA", true: "#409EFF" }}
         value={this.state.Switch_8}
         onValueChange={nextChecked => this.setState({ Switch_8: nextChecked })}
+      />
+      <DateTimePicker
+        showIcon={false}
+        date={this.state.DateTimePicker_9}
+        onDateChange={selectedDate =>
+          this.setState({ DateTimePicker_9: selectedDate })
+        }
       />
     </View>
   )
@@ -131,8 +140,23 @@ const styles = StyleSheet.create({
     lineHeight: 888,
     letterSpacing: 8
   },
+
   Icon_5: {},
   CheckBox_6: {},
   TextInput_7: {},
-  Switch_8: {}
+  Switch_8: {},
+  View_1: {},
+  Text_2: { color: "#ad1414" },
+  Button_3: { color: "#d92626" },
+  CheckBox_4: {
+    width: "100%",
+    alignSelf: "center",
+    lineHeight: 888,
+    letterSpacing: 8
+  },
+  Icon_5: {},
+  CheckBox_6: {},
+  TextInput_7: {},
+  Switch_8: {},
+  DateTimePicker_9: {}
 })
